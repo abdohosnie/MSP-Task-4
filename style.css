@@ -3,7 +3,7 @@
 body,
 html {
     font-family: 'Poppins', sans-serif;
-    min-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -11,10 +11,6 @@ html {
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-.navbar {
-    background-color: #000000;
 }
 
 nav img {
@@ -37,6 +33,36 @@ ul a {
 .nav-item {
     margin-left: 16px;
     margin-right: 16px;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar .msp-text {
+    display: none;
+}
+
+.me-c {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar-brand {
+    margin-right: 0 !important;
 }
 
 body {
@@ -98,7 +124,7 @@ body {
 }
 
 .p-b {
-    padding-bottom: 5%;
+    padding-bottom: 7%;
 }
 
 .form-input:focus {
@@ -245,6 +271,7 @@ body {
 
 .offers {
     padding-top: 100px;
+
 }
 
 .offers .card {
@@ -327,7 +354,7 @@ body {
 .msp-image img {
     width: 100px;
     height: 100px;
-    
+
 }
 
 .msp-text {
@@ -411,16 +438,38 @@ footer a {
 
 }
 
+@media (max-width: 991px) {
+    .border-bot {
+        background-color: #f25123;
+        height: 3px;
+        width: 30%;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        background-image: url(./imgs/background_blur.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .navbar .msp-text {
+        display: block;
+    }
+    
+    .big-logo {
+        display: none;
+    }
+
+}
+
 @media (max-width: 768px) {
     .col-md-6 {
         flex: 0 0 auto;
         width: 100%;
     }
 
-    .big-logo {
-        display: none;
-    }
-
+    
     .card h1 {
         font-size: 1rem;
     }
@@ -428,6 +477,8 @@ footer a {
     .card p {
         font-size: 1rem;
     }
+    
+
 }
 
 @media (max-width: 767px) {
@@ -447,4 +498,26 @@ footer a {
     .card p {
         font-size: 1rem;
     }
+
+    .offers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+        width: 500px;
+        padding-bottom: 100px;
+    }
+
+    .offers .card {
+
+    }
+
+    .circles {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+    
 }

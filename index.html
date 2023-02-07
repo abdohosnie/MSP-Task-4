@@ -35,32 +35,59 @@
     <title>MSP | Task 4</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg d-flex">
-      <a href="#Home" class="navbar-brand"
-        ><img src="./imgs/MSP_LOGO_WHITE.png" alt=""
-      /></a>
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        
+        <div class="me-c">
+          <a href="#home" class="navbar-brand align-items-center">
+            <img src="./imgs/MSP_LOGO_WHITE.png" alt=""/>
+          </a>
+          <div class="msp-text">
+            <h1>MSP Tech-Club</h1>
+            <p>Ain Shams University</p>
+          </div>
+        </div>
+      
 
-      <div
-        class="collapse navbar-collapse d-flex justify-content-between"
-        id="navbarNav"
-      >
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item">
-            <a href="#service" class="nav-link">Service</a>
-          </li>
-          <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <div class="login justify-content-end ml-auto pe-3">
-          <a href="#" class="btn btn-light" target="_blank">Login</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-icon"><i class="bi bi-list"></i></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="border-bot"></div>
+          <div class="login justify-content-end ml-auto pe-3">
+            <a href="#" class="btn btn-light" target="_blank">Login</a>
+          </div>
         </div>
       </div>
     </nav>
 
-    <section class="p-b">
+    <section class="p-b" id="home">
       <div class="container home">
         <div class="row">
           <div class="col-md-6">
@@ -213,7 +240,7 @@
     </section>
     <section>
       <div class="container offers">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4 offers-s">
           <div class="col">
             <div class="card">
               <div class="card-body">
@@ -300,7 +327,7 @@
         </div>
       </div>
     </section>
-    
+
     <footer class="w-100 py-4 flex-shrink-0 blur-bg">
       <div class="container py-4">
         <div class="row gy-4 gx-5">
@@ -318,10 +345,18 @@
                 Read More<span><i class="bi bi-arrow-right"></i></span>
               </h1>
               <div class="social-links">
-                <button type="button" class="btn btn-secondary"><i class="bi bi-facebook"></i></button>
-                <button type="button" class="btn btn-secondary"><i class="bi bi-twitter"></i></button>
-                <button type="button" class="btn btn-secondary"><i class="bi bi-pinterest"></i></button>
-                <button type="button" class="btn btn-secondary"><i class="bi bi-linkedin"></i></button>
+                <button type="button" class="btn btn-secondary">
+                  <i class="bi bi-facebook"></i>
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  <i class="bi bi-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  <i class="bi bi-pinterest"></i>
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  <i class="bi bi-linkedin"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -336,7 +371,7 @@
             </ul>
           </div>
           <div class="col-lg-2 col-md-6">
-            <h5 class="text-white mb-3 ">Support</h5>
+            <h5 class="text-white mb-3">Support</h5>
             <ul class="list-unstyled text-muted">
               <li><a href="#">Community</a></li>
               <li><a href="#">Resources</a></li>
@@ -345,12 +380,31 @@
             </ul>
           </div>
           <div class="col-lg-4 col-md-6">
-            <h5 class="text-white mb-3 pb-2" style="border-bottom: 2px solid #f25123;">Contact Us</h5>
+            <h5
+              class="text-white mb-3 pb-2"
+              style="border-bottom: 2px solid #f25123"
+            >
+              Contact Us
+            </h5>
             <ul class="list-unstyled text-muted">
-              <li><a href="#"><span><i class="bi bi-at white"></i></span> bill.sanders@example.com</a></li>
-              <li><a href="#"><span><i class="bi bi-telephone-fill white"></i></span> (219) 555-0114</a></li>
-              <li><a href="#"><span><i class="bi bi-geo-alt-fill white"></i></span> 2118 Thornridge Cir. Syracuse,
-                Connecticut 35624</a></li>
+              <li>
+                <a href="#"
+                  ><span><i class="bi bi-at white"></i></span>
+                  bill.sanders@example.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="bi bi-telephone-fill white"></i></span> (219)
+                  555-0114</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="bi bi-geo-alt-fill white"></i></span> 2118
+                  Thornridge Cir. Syracuse, Connecticut 35624</a
+                >
+              </li>
             </ul>
           </div>
         </div>
