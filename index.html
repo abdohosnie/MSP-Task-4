@@ -37,18 +37,15 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-black">
       <div class="container-fluid">
-        
         <div class="me-c">
           <a href="#home" class="navbar-brand align-items-center">
-            <img src="./imgs/MSP_LOGO_WHITE.png" alt=""/>
+            <img src="./imgs/MSP_LOGO_WHITE.png" alt="" />
           </a>
-          <div class="msp-text">
+          <div class="msp-text d-none">
             <h1>MSP Tech-Club</h1>
             <p>Ain Shams University</p>
           </div>
         </div>
-      
-
 
         <button
           class="navbar-toggler"
@@ -411,4 +408,14 @@
       </div>
     </footer>
   </body>
+  <script>
+    var toggleIcon = document.querySelector(".navbar-toggler");
+    var navLinks = document.querySelector(".navbar");
+    var logo = document.querySelector(".msp-text");
+
+    toggleIcon.addEventListener("click", function () {
+      navLinks.classList.toggle("blur-bg");
+      logo.classList.toggle("d-none");
+    });
+  </script>
 </html>

@@ -447,16 +447,10 @@ footer a {
         margin-bottom: 20px;
     }
 
-    .navbar {
-        background-image: url(./imgs/background_blur.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
     .navbar .msp-text {
         display: block;
     }
-    
+
     .big-logo {
         display: none;
     }
@@ -469,7 +463,7 @@ footer a {
         width: 100%;
     }
 
-    
+
     .card h1 {
         font-size: 1rem;
     }
@@ -477,7 +471,6 @@ footer a {
     .card p {
         font-size: 1rem;
     }
-    
 
 }
 
@@ -508,9 +501,7 @@ footer a {
         padding-bottom: 100px;
     }
 
-    .offers .card {
-
-    }
+    .offers .card {}
 
     .circles {
         display: none !important;
@@ -519,5 +510,5 @@ footer a {
     .navbar-toggler {
         display: flex;
     }
-    
+
 }
